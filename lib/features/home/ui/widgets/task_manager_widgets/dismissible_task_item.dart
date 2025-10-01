@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
 import '../../../data/models/task.dart';
-import '../delete_confirmation_dialog.dart' show DeleteConfirmationDialog;
+import 'delete_confirmation_dialog.dart' show DeleteConfirmationDialog;
 import 'dismiss_background.dart';
 import 'task_card.dart';
 

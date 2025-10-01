@@ -1,7 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 import '../../data/models/task.dart';
+import 'task_manager_widgets/delete_confirmation_dialog.dart';
 import 'dismiss_background.dart';
 import 'task_card.dart';
 
@@ -45,10 +46,6 @@ class DismissibleTaskItem extends StatelessWidget {
   }
 
   Future<bool?> _showDeleteConfirmation(BuildContext context) async {
-    return await DeleteConfirmationDialog.show(
-      context,
-      task.title,
-      () {},
-    );
+    return await DeleteConfirmationDialog.show(context, task.title, () {});
   }
 }

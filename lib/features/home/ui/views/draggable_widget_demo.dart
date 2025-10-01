@@ -1,7 +1,7 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:challenge_app/core/enums/ball_type.dart';
-import 'package:challenge_app/features/home/ui/widgets/game_ball.dart';
-import 'package:challenge_app/features/home/ui/widgets/task_manager_widgets/game_target.dart';
+import 'package:challenge_app/features/home/ui/widgets/draggable_widgets/game_ball.dart';
+import 'package:challenge_app/features/home/ui/widgets/draggable_widgets/game_target.dart';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
