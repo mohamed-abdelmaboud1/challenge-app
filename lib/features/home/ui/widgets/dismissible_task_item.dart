@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 
 import '../../data/models/task.dart';
 import 'task_manager_widgets/delete_confirmation_dialog.dart';
-import 'dismiss_background.dart';
-import 'task_card.dart';
+import 'task_manager_widgets/dismiss_background.dart';
+import 'task_manager_widgets/task_card.dart';
+
+
 
 class DismissibleTaskItem extends StatelessWidget {
   final Task task;

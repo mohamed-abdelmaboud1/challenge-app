@@ -1,12 +1,13 @@
-import 'package:challenge_app/core/enums/snack_bar_type.dart';
+
 import 'package:challenge_app/core/extensions/show_snack_bar_extension.dart';
-import 'package:challenge_app/features/home/data/models/task.dart';
-import 'package:challenge_app/features/home/ui/widgets/task_manager_widgets/dismissible_task_item.dart';
 import 'package:flutter/material.dart';
 
-import '../widgets/task_empty_state.dart';
-import '../widgets/task_manager_background.dart' show TaskManagerBackground;
-import '../widgets/task_manager_header.dart' show TaskManagerHeader;
+import '../../../../core/enums/snack_bar_type.dart';
+import '../../data/models/task.dart';
+import '../widgets/dismissible_task_item.dart';
+import '../widgets/task_manager_widgets/task_empty_state.dart';
+import '../widgets/task_manager_widgets/task_manager_background.dart';
+import '../widgets/task_manager_widgets/task_manager_header.dart';
 
 class TaskManagerView extends StatefulWidget {
   const TaskManagerView({super.key});

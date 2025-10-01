@@ -13,7 +13,7 @@ class TaskManagerBackground extends StatelessWidget {
         image: DecorationImage(
           image: AssetImage(AppImages.imagesFlutterMentors3Logo),
           fit: BoxFit.contain,
-          opacity: 0.1,
+          opacity: 0.2,
           alignment: Alignment.center,
         ),
       ),

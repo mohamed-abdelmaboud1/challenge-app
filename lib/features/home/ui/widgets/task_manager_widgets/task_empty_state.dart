@@ -21,7 +21,7 @@ class TaskEmptyState extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'Tap the + button to add your first task',
+            'Tap + button to add your first task',
             style: TextStyle(fontSize: 14, color: Colors.grey.shade500),
           ),
         ],
