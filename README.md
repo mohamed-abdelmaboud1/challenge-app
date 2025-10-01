@@ -6,6 +6,9 @@
 
 The application serves as a learning platform and reference implementation for Flutter developers looking to understand complex animations, state management with hooks, modular widget architecture, and engaging user interactions.
 
+## Demos
+
+
 ## Features
 
 ### 🎨 **Advanced Animations**
@@ -32,21 +35,6 @@ The application serves as a learning platform and reference implementation for F
 - Video player integration for wrong answers
 - Score tracking and game state management
 
-### 🏗️ **Modern Architecture**
-
-- Clean Architecture with feature-based organization
-- Modular widget system for reusability
-- Flutter Hooks for efficient state management
-- Equatable for value equality comparisons
-- Custom routing with GoRouter
-
-### 🎯 **UI/UX Excellence**
-
-- Material Design 3 components
-- Responsive layouts for multiple screen sizes
-- Custom animations and transitions
-- Accessible design patterns
-- Device preview integration for testing
 
 ## Project Structure
 
@@ -128,86 +116,6 @@ TaskManagerView
     └── DismissBackground
 ```
 
-## Screenshots
-
-### Main Features
-
-![Home Screen](screenshots/home_screen.png)
-_Main navigation and feature overview_
-
-![Task Manager](screenshots/task_manager.png)
-_Task management interface with swipe actions_
-
-![Task Creation](screenshots/task_creation.png)
-_Adding new tasks with priority selection_
-
-### Animation Showcase
-
-![Loading Animation](screenshots/dots_animation.png)
-_Sequential dots loading animation with controls_
-
-![Animation Controls](screenshots/animation_controls.png)
-_Play, pause, and restart animation controls_
-
-### Interactive Gameplay
-
-![Drag Drop Game](screenshots/drag_drop_game.png)
-_Ball matching game with drag and drop mechanics_
-
-![Game Victory](screenshots/game_victory.png)
-_Confetti celebration and success feedback_
-
-![Game Feedback](screenshots/game_feedback.png)
-_Audio and visual feedback for interactions_
-
-### Task Management Details
-
-![Swipe Actions](screenshots/swipe_actions.png)
-_Swipe-to-complete and swipe-to-delete actions_
-
-![Task Reordering](screenshots/task_reordering.png)
-_Drag and drop task reordering functionality_
-
-![Task Priorities](screenshots/task_priorities.png)
-_High and low priority task visualization_
-
-### Responsive Design
-
-![Mobile Layout](screenshots/mobile_layout.png)
-_Optimized mobile interface_
-
-![Tablet Layout](screenshots/tablet_layout.png)
-_Responsive tablet adaptation_
-
-## Getting Started
-
-### Prerequisites
-
-- Flutter 3.0 or higher
-- Dart 3.0 or higher
-- Android Studio / VS Code
-- Device or Emulator
-
-### Installation
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/mohamed-abdelmaboud1/challenge-app.git
-   cd challenge-app
-   ```
-
-2. **Install dependencies**
-
-   ```bash
-   flutter pub get
-   ```
-
-3. **Run the application**
-   ```bash
-   flutter run
-   ```
-
 ### Key Dependencies
 
 - `flutter_hooks` - State management with hooks
@@ -217,29 +125,6 @@ _Responsive tablet adaptation_
 - `audioplayers` - Sound effects
 - `video_player` - Video playback
 - `device_preview` - Multi-device testing
-
-## Architecture Highlights
-
-### Clean Architecture Implementation
-
-- **Feature-based organization** for scalability
-- **Separation of concerns** with clear layer boundaries
-- **Dependency injection** patterns
-- **Testable code structure**
-
-### State Management
-
-- **Flutter Hooks** for functional reactive programming
-- **useAnimationController** for animation management
-- **useEffect** for lifecycle handling
-- **Stateless widgets** for performance optimization
-
-### Widget Design Patterns
-
-- **Composition over inheritance**
-- **Single responsibility principle**
-- **Reusable component library**
-- **Consistent naming conventions**
 
 ---
 
