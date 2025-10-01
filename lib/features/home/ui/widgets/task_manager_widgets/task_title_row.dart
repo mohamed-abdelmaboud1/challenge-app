@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'task.dart';
+import '../../../data/models/task.dart';
 import 'task_priority_badge.dart';
 
 class TaskTitleRow extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'task.dart';
+import '../../../data/models/task.dart';
 import 'task_content.dart';
 import 'task_priority_indicator.dart';
 

@@ -1,22 +1,21 @@
 import 'package:challenge_app/core/enums/snack_bar_type.dart';
 import 'package:challenge_app/core/extensions/show_snack_bar_extension.dart';
+import 'package:challenge_app/features/home/data/models/task.dart';
+import 'package:challenge_app/features/home/ui/widgets/task_manager_widgets/dismissible_task_item.dart';
 import 'package:flutter/material.dart';
 
-import '../widgets/dismissible_task_item.dart';
-// Import all widget components
-import '../widgets/task.dart';
 import '../widgets/task_empty_state.dart';
-import '../widgets/task_manager_background.dart';
-import '../widgets/task_manager_header.dart';
+import '../widgets/task_manager_background.dart' show TaskManagerBackground;
+import '../widgets/task_manager_header.dart' show TaskManagerHeader;
 
-class DismissibleExampleView extends StatefulWidget {
-  const DismissibleExampleView({super.key});
+class TaskManagerView extends StatefulWidget {
+  const TaskManagerView({super.key});
 
   @override
-  State<DismissibleExampleView> createState() => _DismissibleExampleViewState();
+  State<TaskManagerView> createState() => _TaskManagerViewState();
 }
 
-class _DismissibleExampleViewState extends State<DismissibleExampleView> {
+class _TaskManagerViewState extends State<TaskManagerView> {
   late List<Task> tasks;
 
   @override

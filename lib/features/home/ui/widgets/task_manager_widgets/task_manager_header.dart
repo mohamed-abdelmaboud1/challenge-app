@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/widgets/border_beam.dart';
+import '../../../../../core/widgets/border_beam.dart';
 import 'add_task_button.dart';
-import 'task.dart';
+import '../../../data/models/task.dart';
 import 'task_count_section.dart';
 
 class TaskManagerHeader extends StatelessWidget {

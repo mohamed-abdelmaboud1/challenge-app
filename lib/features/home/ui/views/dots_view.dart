@@ -21,28 +21,17 @@ class DotsView extends HookWidget {
 
     return Scaffold(
       backgroundColor: Colors.grey.shade100,
-      body: LoadingScreenLayout(controller: controller),
-    );
-  }
-}
-
-class LoadingScreenLayout extends StatelessWidget {
-  final AnimationController controller;
-
-  const LoadingScreenLayout({super.key, required this.controller});
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const LoadingTitle(),
-          const SizedBox(height: 40),
-          AnimatedDotsSequence(controller: controller),
-          const SizedBox(height: 60),
-          AnimationControlButtons(controller: controller),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const LoadingTitle(),
+            const SizedBox(height: 40),
+            AnimatedDotsSequence(controller: controller),
+            const SizedBox(height: 60),
+            AnimationControlButtons(controller: controller),
+          ],
+        ),
       ),
     );
   }

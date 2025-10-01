@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'task.dart';
+import '../../../data/models/task.dart';
 
 class TaskCountSection extends StatelessWidget {
   final List<Task> tasks;

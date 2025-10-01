@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'task.dart';
+import '../../../data/models/task.dart';
 import 'task_completion_status.dart';
 import 'task_description.dart';
 import 'task_title_row.dart';
