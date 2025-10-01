@@ -1,11 +1,13 @@
 import 'package:challenge_app/core/enums/snack_bar_type.dart';
 import 'package:challenge_app/core/extensions/show_snack_bar_extension.dart';
-import 'package:challenge_app/features/home/ui/widgets/dismissible_task_item.dart';
-import 'package:challenge_app/features/home/ui/widgets/task.dart';
-import 'package:challenge_app/features/home/ui/widgets/task_empty_state.dart';
-import 'package:challenge_app/features/home/ui/widgets/task_manager_background.dart';
-import 'package:challenge_app/features/home/ui/widgets/task_manager_header.dart';
 import 'package:flutter/material.dart';
+
+import '../widgets/dismissible_task_item.dart';
+// Import all widget components
+import '../widgets/task.dart';
+import '../widgets/task_empty_state.dart';
+import '../widgets/task_manager_background.dart';
+import '../widgets/task_manager_header.dart';
 
 class DismissibleExampleView extends StatefulWidget {
   const DismissibleExampleView({super.key});
@@ -27,19 +29,19 @@ class _DismissibleExampleViewState extends State<DismissibleExampleView> {
     tasks = [
       const Task(
         id: 0,
-        title: "Complete Drag Challenge",
+        title: "Complete Drag & Drop Challenge",
         description: "Finish the drag and drop challenge app",
         priority: TaskPriority.high,
       ),
       const Task(
         id: 1,
         title: "Review Code",
-        description: "Check for any bugs",
+        description: "Check for any bugs and improvements",
         priority: TaskPriority.high,
       ),
       const Task(
         id: 2,
-        title: "Update Docs",
+        title: "Update Documentation",
         description: "Add comments and README updates",
         priority: TaskPriority.low,
       ),
@@ -117,6 +119,21 @@ class _DismissibleExampleViewState extends State<DismissibleExampleView> {
     );
   }
 
+  void reorderTasks(int oldIndex, int newIndex) {
+    setState(() {
+      if (oldIndex < newIndex) {
+        newIndex -= 1;
+      }
+      final Task item = tasks.removeAt(oldIndex);
+      tasks.insert(newIndex, item);
+    });
+
+    context.showCustomSnackBar(
+      'Task reordered successfully!',
+      type: SnackBarType.info,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -128,12 +145,14 @@ class _DismissibleExampleViewState extends State<DismissibleExampleView> {
             Expanded(
               child: tasks.isEmpty
                   ? const TaskEmptyState()
-                  : ListView.builder(
-                      itemCount: tasks.length,
+                  : ReorderableListView.builder(
                       padding: const EdgeInsets.symmetric(horizontal: 16),
+                      itemCount: tasks.length,
+                      onReorder: reorderTasks,
                       itemBuilder: (context, index) {
                         final task = tasks[index];
                         return DismissibleTaskItem(
+                          key: ValueKey(task.id),
                           task: task,
                           index: index,
                           onToggleCompletion: toggleTaskCompletion,

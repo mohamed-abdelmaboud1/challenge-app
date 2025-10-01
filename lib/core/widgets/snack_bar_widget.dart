@@ -87,7 +87,7 @@ class SnackBarWidget extends StatelessWidget {
       message,
       textAlign: TextAlign.center,
       style: TextStyle(
-        fontSize: 14,
+        fontSize: 12,
         
         fontWeight: FontWeight.w600,
         color: Colors.grey.shade800,

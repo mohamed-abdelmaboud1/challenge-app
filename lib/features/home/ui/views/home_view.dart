@@ -1,5 +1,6 @@
-import 'package:challenge_app/features/home/ui/views/dismissible_example_view.dart';
 import 'package:flutter/material.dart';
+
+import 'dismissible_example_view.dart';
 
 
 class HomeView extends StatelessWidget {
@@ -9,7 +10,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: DismissibleExampleView(),
+      body: const DismissibleExampleView(),
     );
   }
 }

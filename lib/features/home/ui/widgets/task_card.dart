@@ -35,6 +35,13 @@ class TaskCard extends StatelessWidget {
             TaskPriorityIndicator(priority: task.priority),
             const SizedBox(width: 16),
             Expanded(child: TaskContent(task: task)),
+            const SizedBox(width: 8),
+            IconButton(
+              icon: Icon(Icons.drag_handle, size: 30),
+
+              color: Colors.blue.shade400,
+              onPressed: () {},
+            ),
           ],
         ),
       ),
