@@ -8,6 +8,17 @@ The application serves as a learning platform and reference implementation for F
 
 ## Demos
 
+### drag & target
+
+https://github.com/user-attachments/assets/51220215-8456-4e05-b96b-0e4d8c70a6b7
+### Task Manager
+https://github.com/user-attachments/assets/3ace3b17-b352-4b28-b4eb-7d5047c4a661
+### Task Manager
+https://github.com/user-attachments/assets/2658a064-a78f-40ef-8876-f0fc8c9093b8
+### Sequential dots loading animation
+https://github.com/user-attachments/assets/0b5e48a8-44db-4a03-8976-80b714cff279
+
+
 
 ## Features
 
