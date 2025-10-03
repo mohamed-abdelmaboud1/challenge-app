@@ -31,7 +31,6 @@ class GameTarget extends StatelessWidget {
       children: [
         DragTarget<BallType>(
           builder: (context, accepted, rejected) {
-            // Show video only for this specific target
             if (showVideo && videoController != null) {
               return SizedBox(
                 width: size,
@@ -43,7 +42,7 @@ class GameTarget extends StatelessWidget {
               );
             }
 
-            // Show the accepted ball image if there's a correct match
+            // Show the accepted ball image if a correct match
             if (acceptedBall != null) {
               return Container(
                 width: size,
